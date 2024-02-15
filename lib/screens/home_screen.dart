@@ -95,16 +95,20 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 100,
+        title: const Text(
+          'pomotimer',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 50,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        backgroundColor: const Color(0xFFE7626C),
+      ),
       body: Column(
         children: [
-          const Text(
-            "pomotimer",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 25,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
           Flexible(
             child: Container(
               alignment: Alignment.center,
