@@ -153,6 +153,9 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
           ),
+          const SizedBox(
+            height: 40,
+          ),
           IconButton(
             iconSize: 120,
             color: Theme.of(context).cardColor,
